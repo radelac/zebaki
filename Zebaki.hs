@@ -32,7 +32,7 @@ type Net = ReaderT Bot IO
 data Bot = Bot { socket :: Handle, starttime :: ClockTime }
 
 --
--- Set up actliftIOns to run on start and end, and run the main loop
+-- Set up actions to run on start and end, and run the main loop
 --
 main :: IO ()
 main = bracket connect disconnect loop
